@@ -1,0 +1,46 @@
+{
+    "books": [
+        {
+            "id": "B-JP0ZO",
+            "title": "Game of thrones",
+            "author": "Akarsh",
+            "total_copies": 30,
+            "available_copies": 29,
+            "added_on": "2025-10-13 20:42:49"
+        },
+        {
+            "id": "B-ZU33N",
+            "title": "Breaking Bad",
+            "author": "Sarthak",
+            "total_copies": 25,
+            "available_copies": 24,
+            "added_on": "2025-10-13 20:43:26"
+        }
+    ],
+    "members": [
+        {
+            "id": "M-CFNR2",
+            "name": "Akarsh vyas",
+            "email": "akarsh@gmail.com",
+            "borrowed": [
+                {
+                    "book_id": "B-JP0ZO",
+                    "title": "Game of thrones",
+                    "borrow_on": "2025-10-13 21:28:20"
+                }
+            ]
+        },
+        {
+            "id": "M-TIKWR",
+            "name": "Harsh",
+            "email": "harsh77@gmail.com",
+            "borrowed": [
+                {
+                    "book_id": "B-ZU33N",
+                    "title": "Breaking Bad",
+                    "borrow_on": "2025-10-13 21:52:41"
+                }
+            ]
+        }
+    ]
+}
