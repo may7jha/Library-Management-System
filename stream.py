@@ -104,7 +104,7 @@ elif menu == "Add Book":
             data["books"].append(book)
             save_data(data)
             st.success(f"Book added: {book['id']} — {book['title']}")
-            st.experimental_rerun()
+            st.rerun()
 
 # ---------- List Books ----------
 elif menu == "List Books":
@@ -142,7 +142,7 @@ elif menu == "List Books":
                     book["available_copies"] = int(new_available)
                     save_data(data)
                     st.success("Book updated")
-                    st.experimental_rerun()
+                    st.rerun()
 
 # ---------- Add Member ----------
 elif menu == "Add Member":
@@ -161,7 +161,7 @@ elif menu == "Add Member":
             data["members"].append(member)
             save_data(data)
             st.success(f"Member added: {member['id']} — {member['name']}")
-            st.experimental_rerun()
+            st.rerun()
 
 # ---------- List Members ----------
 elif menu == "List Members":
@@ -250,7 +250,7 @@ elif menu == "Return Book":
                             book_list[0]["available_copies"] = book_list[0].get("available_copies", 0) + 1
                         save_data(data)
                         st.success(f"Returned: {selected['title']}")
-                        st.experimental_rerun()
+                        st.rerun()
                     else:
                         st.error("Invalid selection")
 
