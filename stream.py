@@ -49,7 +49,7 @@ data = load_data()
 
 # ---------- Streamlit UI ----------
 st.set_page_config(page_title="Library Management", layout="wide")
-st.title("📚 Library Management (Streamlit)")
+st.title("📚 Library Management System ")
 
 menu = st.sidebar.selectbox("Choose action", [
     "Dashboard",
