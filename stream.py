@@ -223,7 +223,7 @@ elif menu == "Borrow Book":
                 book["available_copies"] = max(0, book.get("available_copies", 0) - 1)
                 save_data(data)
                 st.success(f"{member['name']} borrowed {book['title']}")
-                st.experimental_rerun()
+                st.rerun()
 
 # ---------- Return Book ----------
 elif menu == "Return Book":
